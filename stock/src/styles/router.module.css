@@ -1,0 +1,22 @@
+.router{
+    width:60%;
+    height:30px;
+  
+   display:flex;
+   gap:5%;
+   padding-top: 5%;
+}
+.names{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+.names:hover{
+    color:#0456B9;
+    text-decoration: underline;
+}
+.nameLine{
+    width: 100%;
+    border-top: 0.25px solid rgb(129, 120, 120);
+   margin-top:2%;
+}
