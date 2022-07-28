@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../styles/screener.module.css'
 const Screener = () => {
+  
   return (
     <div className={styles.scontainer}>
      <div style={{display: 'grid',gridTemplateColumns:"50% 50%",justifyContent: 'space-around'}}>
