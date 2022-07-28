@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 const Footer = () => {
   return (
-    <div style={{height: '265px',marginTop:'5%',backgroundColor:'#0456B9'}}>
+    <div style={{height: '275px',marginTop:'5%',backgroundColor:'#0456B9',width:'118.5%',marginLeft:'-10%'}}>
     <div style={{display:'grid',gridTemplateColumns:"70% 30%",width:'85%',margin:'auto',paddingTop:'5%'}}>
         <div >
             <p className="footerOption">FAQ's</p>
@@ -23,7 +23,7 @@ const Footer = () => {
     </div>
   
     <div style={{marginLeft:"7%"}}>
-   <p>Copyright©2020. All Rights Reserved</p>
+   <p style={{marginTop:"0%"}}>Copyright©2020. All Rights Reserved</p>
     </div>
     </div>
   )
