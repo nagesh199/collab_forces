@@ -20,7 +20,7 @@ class ActionProvider {
       let speech = new SpeechSynthesisUtterance("");
       speech.text = text;
       speech.rate = 1;
-      speech.voice = voices[17];
+      speech.voice = voices[0];
       speechSynthesis.speak(speech);
     }
   }

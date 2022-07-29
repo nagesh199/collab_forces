@@ -1,8 +1,8 @@
 
-import React from "react";
 import io from "socket.io-client"
-import {Line,CartesianGrid,LineChart,XAxis,YAxis,Tooltip} from "recharts"
-import { useEffect,useState } from "react";
+import {Line,CartesianGrid,LineChart,XAxis,YAxis} from "recharts"
+import { useEffect, useState } from "react";
+import styles from '../styles/chart.module.css'
 
 export const Chart = ()=>{
     const socket = io.connect("http://localhost:8080");
@@ -13,9 +13,12 @@ export const Chart = ()=>{
         })
     },[])
     return (
-        <div>
-               <LineChart width={500} height={300} data={chartData}>
-                    <XAxis dataKey="name"/>
+        <div className={styles.chart}>
+               <div >
+                 <h1>Stock Market Data</h1>
+               </div>
+               <LineChart width={900} height={500} data={chartData}>
+                    <XAxis dataKey/>
                     <YAxis/>
                     <CartesianGrid stroke="#eee" strokeDasharray="5 5"/>
                     <Line dataKey="value" />

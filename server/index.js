@@ -20,7 +20,6 @@ const io = new Server(httpServer,{
     },
     transports:["websocket","polling"]
 });
-let tick = 0
 io.on("connection",async(socket)=>{
   const indexdata = await Index.find();
   const gainerdata = await Gainer.find();
@@ -34,7 +33,7 @@ io.on("connection",async(socket)=>{
    setInterval(()=>{
        os.cpuUsage(cpuPercent=>{
          socket.emit("cpu",{
-           name:tick,
+           name,
            value:cpuPercent
          })
        })

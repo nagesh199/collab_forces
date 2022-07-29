@@ -19,14 +19,14 @@ const Screener = () => {
   useEffect(()=>{
        setInterval(()=>{
             setCount(count+Math.random()*10)
-       },5000)
+       },3000)
   },[])
 
   return (
     <div className={styles.scontainer}>
      <div style={{display: 'grid',gridTemplateColumns:"50% 50%",justifyContent: 'space-around'}}>
       <h2  style={{marginLeft:'2%'}}>Index</h2>
-      <p style={{marginLeft:'72%',backgroundColor:'#0456B9',color:'white',paddingTop:'2px',paddingLeft:"5px",width:"70px",height:'20px',borderRadius:"3px",cursor:'pointer',fontFamily:'Arial", sans-serif',fontSize:'15px'}}>Screener</p>
+      <p style={{marginLeft:'72%',backgroundColor:'#0456B9',color:'white',paddingTop:'6px',width:"70px",height:'25px',borderRadius:"3px",cursor:'pointer',fontFamily:'Arial", sans-serif',fontSize:'15px', textAlign:"center"}}>Screener</p>
      </div>
     <div className={styles.sindex}>
     {stockData.map((item)=>(

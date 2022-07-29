@@ -1,16 +1,17 @@
 .router{
-    margin-top:10%;
+    margin-top: 3%;
     width:60%;
     height:30px;
-  
-   display:flex;
-   gap:5%;
-   padding-top: 5%;
+    display:flex;
+    gap:5%;
+    padding-top: 5%;
+    padding-left: 1.5%;
 }
 .names{
     text-decoration: none;
     font-size: 25px;
     color: black;
+    font-weight: bold;
 }
 .names:hover{
     color:#0456B9;

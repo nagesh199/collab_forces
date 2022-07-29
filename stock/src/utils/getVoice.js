@@ -6,7 +6,7 @@ const getVoice = (text) => {
     let speech = new SpeechSynthesisUtterance("");
     speech.text = text;
     speech.rate = 1;
-    speech.voice = voices[17] || voices[0];
+    speech.voice = voices[0];
     speechSynthesis.speak(speech);
   }
   else {

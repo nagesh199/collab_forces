@@ -2,14 +2,11 @@ body{
     z-index: -1;
 }
 .landing {
-   margin: auto;
+    margin: auto;
     display: flex;
-    gap:20%;
+    justify-content: space-around;
     margin-top: 8em;
   
-}
-.landing>div {
-     width:40%;
 }
 .landing1 {
     margin-left: 1em;
@@ -41,4 +38,14 @@ body{
 .landing2>div>img {
     width:70px;
     height: 50px;
+}
+.help{
+    border: none;
+    background-color: #0456B9 ;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 5%;
+    cursor: pointer;
 }
