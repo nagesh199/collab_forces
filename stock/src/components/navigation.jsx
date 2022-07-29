@@ -1,28 +1,30 @@
-import React, { useState } from 'react';
+
 import styles from '../styles/navigation.module.css'
 import { Link } from 'react-router-dom'
-import { MDBInputGroup, MDBInput, MDBIcon, MDBAlert, MDBBtn } from 'mdb-react-ui-kit';
+import { BiWalletAlt  } from "react-icons/bi";
+import { IoIosNotificationsOutline } from "react-icons/io"
+import { TbUserCircle } from "react-icons/tb";
+import logo from "../assets/logo.png"
+
+
 export default function navigation(){
-  const [showSearchAlert, setShowSearchAlert] =useState<boolean>(false);
+ 
   return (
     <div className={styles.navigation}>
     <div className={styles.logoDiv}>
-    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.slaterbaptistchurch.org%2Fwp-content%2Fuploads%2FThrive.jpg&f=1&nofb=1" alt="logo" />
-    <Link to="">Home</Link>
-    <Link to="" >Investment</Link>
+    <img src={logo} alt="logo" />
+    <Link className={styles.explore} to="">Explore</Link>
+    <Link className={styles.explore} to="" >Investment</Link>
     </div>
-    <div>
-    <MDBInputGroup>
-        <MDBInput label='Search' />
-        <MDBBtn onClick={() => setShowSearchAlert(true)} rippleColor='dark'>
-          <MDBIcon icon='search' />
-        </MDBBtn>
-      </MDBInputGroup>
-
-      <MDBAlert delay={1000} position='top-right' autohide appendToBody show={showSearchAlert}>
-        Search!
-      </MDBAlert>
-    </div>
+ <div> 
+  <input className={styles.search} type="search" placeholder="Search......" style={{fontSize:'20px'}}/>
+ 
+ </div>
+ <div className={styles.account}>
+ <IoIosNotificationsOutline style={{marginTop:'3%',height:'50px',width:'30px',cursor:'pointer'}}/>
+ <BiWalletAlt style={{marginTop:'3%',height:'50px',width:'30px',cursor:'pointer'}} />
+ <TbUserCircle style={{marginTop:'3%',height:'50px',width:'30px',cursor:'pointer',fontWeight:'100'}} />
+ </div>
     </div>
   )
 }

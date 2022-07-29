@@ -1,9 +1,6 @@
 .navigation{
     height: 65px;
-    width: 80%;
-    border: 1px solid black;
-    background-color: #414141 ;
-    margin: auto;
+   
     display:grid;
     grid-template-columns: 35% 45% 20%  ;
 }
@@ -12,15 +9,41 @@
     width: 100%;
    padding-left: 3%;
    display:flex;
-   gap:4%
+   gap:4%;
+   
 }
 .logoDiv >img{
-    height: 60px;
+    height: 80px;
     width: 150px;
+    margin-Top: -3%;  
 }
-.logoDiv >Link{
+.explore{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 22px;
     margin-top:15px;
+}
+.search{
+    border-top: none;
+    height:30px;
+    width:90%;
+    margin:auto;
+    margin-top:3.5%;
+    border-left: none;
+    border-right: none;
+    background-color: #e4e4e4f6;
+    
+}
+.account{
+    margin-left: 5%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.explore:hover{
+    color:#0456B9;
+    transition:2 seconds;
+}
+.search:hover{
+    border:2px solid #0456B9;
+    border-radius:5px;
 }
