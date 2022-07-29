@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Chatbot from './components/Chatbot/Chatbot';
 import './App.css';
 
+
 function App() {
+  const [show, setShow] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {show && <Chatbot />}
+      <button onClick={() => {
+        setShow(!show)
+       }}>Help?</button>
     </div>
   );
 }
