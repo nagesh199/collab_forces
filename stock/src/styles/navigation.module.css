@@ -38,6 +38,7 @@
     margin-left: 5%;
     display:grid;
     grid-template-columns: repeat(3,1fr);
+    padding-top: 4%;
 }
 .explore:hover{
     color:#0456B9;
@@ -46,4 +47,61 @@
 .search:hover{
     border:2px solid #0456B9;
     border-radius:5px;
+}
+.login{
+    width:230%;
+    height:450px;
+    border-radius:2px;
+    z-index: 3;
+    margin:auto;
+    margin-top:5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 30%;
+    
+}
+.imageDiv{
+   
+height:100%;
+width: 100%;   
+}
+.emailDiv{
+    border:1px solid black;
+    background-color:white;
+    height:99.5%;
+    width: 100%;   
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.backImage{
+    border-top-left-radius: ;
+}
+.btn1{
+    width:320px;
+    height:40px;
+    background:transparent;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size:22px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    margin-left:15%
+}
+.btn1:hover{
+    background-color:rgb(247, 236, 236);
+    transition: all 0.
+}
+.btn2{
+    height:50px;
+    width:350px;
+    background-color:#0456B9;
+    border: none;
+    color:white;
+    font-size:20px;
+    margin-top:3%;
+    margin-left:10%;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color:#2666bb
 }
