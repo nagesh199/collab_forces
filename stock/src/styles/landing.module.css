@@ -1,0 +1,44 @@
+body{
+    z-index: -1;
+}
+.landing {
+   margin: auto;
+    display: flex;
+    gap:20%;
+    margin-top: 8em;
+  
+}
+.landing>div {
+     width:40%;
+}
+.landing1 {
+    margin-left: 1em;
+    margin-top: 12em;
+}
+.landing1>p:nth-child(1){
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+.landing1>p:nth-child(2){
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+.landing2 {
+    display: flex;
+    gap:30px;
+   margin-bottom: 3em;
+}
+.landing2>div{
+    width:200px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-size: 22px;
+    font-weight: 700;
+}
+.landing2>div>img {
+    width:70px;
+    height: 50px;
+}

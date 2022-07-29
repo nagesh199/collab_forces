@@ -20,4 +20,25 @@
 }
 .react-chatbot-kit-user-chat-message{
   margin-right: 10px;
+}  
+body{
+  width: 85%;
+  margin: auto;
+  background-color: #e4e4e4f6;
+}
+.container{
+  display:grid;
+  grid-template-columns:70% 30%;
+  height:800px;
+
+}
+.footerOption{
+  font-weight:550;
+  font-size:18px;
+  cursor: pointer;
+  color: white
+}
+.footerOption:hover{
+   color:rgb(205,23,31);
+   transition: 100ms;
 }
