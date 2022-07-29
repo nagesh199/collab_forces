@@ -1,9 +1,12 @@
+body{
+    z-index: -1;
+}
 .landing {
-    width:95%;
-    margin: auto;
+   margin: auto;
     display: flex;
     gap:20%;
     margin-top: 8em;
+  
 }
 .landing>div {
      width:40%;

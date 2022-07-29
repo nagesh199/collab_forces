@@ -1,6 +1,6 @@
 import Gainers from "../components/Gainers"
 import Lossers from "../components/Losers"
-import Navigation from "../components/navigation.jsx"
+import Navigation from "../components/Navigation.jsx"
 import Screener from "../components/Screener"
 import styles from "../styles/home.module.css"
 import {AiOutlineStock,AiFillGold } from "react-icons/ai";
@@ -11,7 +11,6 @@ import Routercomponent from "../components/Routercomponent"
 const Home = () => {
   return (
 <div>
-   <Navigation/> 
    <Routercomponent/>
    <div className="container">
     <div className="leftDiv">

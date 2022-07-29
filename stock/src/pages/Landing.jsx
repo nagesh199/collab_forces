@@ -2,9 +2,10 @@ import styles from '../styles/landing.module.css'
 import Button from '../components/Button'
 
 export const Landing =()=>{
+    
     const button = {
-        bg: "blue",
-        text: "Get Start",
+        bg: "#0456B9",
+        text: "Get Started",
         width: "40%",
         br: "5px",
         color: "#ffffff",

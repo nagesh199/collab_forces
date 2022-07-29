@@ -1,7 +1,30 @@
+.App {
+  width: 50%;
+  margin: auto;
+}
+.react-chatbot-kit-chat-inner-container, .react-chatbot-kit-chat-input-container{
+  width: 400px;
+}
+.react-chatbot-kit-chat-bot-message-container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.react-chatbot-kit-chat-bot-message {
+   margin-left: 10px;
+   font-weight: bold;
+   font-size: 12px;
+}
+.react-chatbot-kit-chat-input{
+  outline: none;
+}
+.react-chatbot-kit-user-chat-message{
+  margin-right: 10px;
+}  
 body{
   width: 85%;
   margin: auto;
-  background-color: #e4e4e4f6;
+  background-color: white;
 }
 .container{
   display:grid;
