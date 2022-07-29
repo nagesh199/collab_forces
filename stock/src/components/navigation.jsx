@@ -164,7 +164,7 @@ export default function Navigation() {
                   <p style={{ marginTop: "10px" }}> Continue With Google</p>
                 </button>
 
-                <div style={{ marginTop: "10%", marginLeft: "45%" , fontSize:"20px"}}>
+                <div style={{ marginTop: "10%", marginLeft: "45%" , fontSize:"25px"}}>
                   <p>--- or ---</p>
                 </div>
                 <div>
