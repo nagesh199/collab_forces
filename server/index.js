@@ -1,7 +1,9 @@
 const express = require("express");
 const http = require("http");
 const {Server} = require("socket.io");
+const os = require("os-utils")
 const { connection, Index, Gainer, Loser } = require("./db");
+
 
 const app = express();
 app.use(express.urlencoded({extended:true}));
@@ -15,9 +17,10 @@ const io = new Server(httpServer,{
         methods:["GET","POST"],
         allowedHeaders :["my-custom-header"],
         credentials:true
-    }
+    },
+    transports:["websocket","polling"]
 });
-
+let tick = 0
 io.on("connection",async(socket)=>{
   const indexdata = await Index.find();
   const gainerdata = await Gainer.find();
@@ -28,18 +31,17 @@ io.on("connection",async(socket)=>{
     loserdata
  }
    socket.emit("stock",payload)
-  
+   setInterval(()=>{
+       os.cpuUsage(cpuPercent=>{
+         socket.emit("cpu",{
+           name:tick,
+           value:cpuPercent
+         })
+       })
+   },1000)
 })
 
-app.post("/post", async(req,res) =>{
-    try {
-       const index = await  Loser.create(req.body);
-       return res.status(201).send(index)
-    }
-    catch(err){
-       return res.status(500).send({message:err.message})
-    }
-  })
+
 httpServer.listen(8080, async()=>{
     await connection
     console.log("server started on 8080 ")
