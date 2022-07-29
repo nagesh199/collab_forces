@@ -12,7 +12,7 @@ import { useState } from 'react';
 
 
 
-export default function navigation(){
+export default function Navigation(){
   const info=JSON.parse(localStorage.getItem('userinfo'));
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [show,setShow] = useState(false);
