@@ -66,7 +66,7 @@ export default function navigation(){
           />
           <h1
             style={{
-              marginTop: "-100%",
+              marginTop: "-90%",
               textAlign: "left",
               marginLeft: "5%",
               color: "white",
@@ -88,7 +88,7 @@ export default function navigation(){
           </h1>
           <h1
             style={{
-              marginTop: "55%",
+              marginTop: "50%",
               textAlign: "left",
               marginLeft: "5%",
               color: "white",
@@ -100,7 +100,7 @@ export default function navigation(){
           </h1>
         </div>
         <div className={styles.emailDiv}>
-        <p onClick={()=>{setShow(false)}} style={{textAlign: "right",marginRight:'5%',fontSize: "22px",marginTop: "0%",cursor:'pointer'}}>X</p>
+        <p onClick={()=>{setShow(false)}} style={{textAlign: "right",marginRight:'5%',fontSize: "22px",marginTop: "4%",cursor:'pointer'}}>X</p>
 
           <h1
             style={{
@@ -132,7 +132,7 @@ export default function navigation(){
                   width: 350,
                   maxWidth: "100%",
                   marginLeft:'10%',
-                  marginTop:'15%',
+                  marginTop:'12%',
                 }}
               >
                 <TextField fullWidth label="Your Email Address"  />

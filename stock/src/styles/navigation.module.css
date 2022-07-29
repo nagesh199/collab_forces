@@ -1,8 +1,11 @@
 .navigation{
-    height: 65px;
-   
+    background-color:white;
+    height: 80px;
+    width: 90%;
     display:grid;
     grid-template-columns: 35% 45% 20%  ;
+    position: fixed;
+    top:0px;
 }
 .logoDiv{
     height: 100%;
@@ -31,7 +34,7 @@
     margin-top:3.5%;
     border-left: none;
     border-right: none;
-    background-color: #e4e4e4f6;
+    background-color: white;
     
 }
 .account{
