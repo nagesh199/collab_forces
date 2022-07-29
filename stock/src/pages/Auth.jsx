@@ -26,8 +26,8 @@ const Auth = () => {
    navigate('/home')
    }
     return (
-      <div className="App">
-        {/* <Landing/> */}
+      <div style={{padding:'20%',width:'50%'}}>
+     
         <div id="signIn">
          
         </div>

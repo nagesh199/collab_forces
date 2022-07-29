@@ -1,6 +1,6 @@
 import styles from '../styles/landing.module.css'
 import Button from '../components/Button'
-
+import Footer from '../components/Footer'
 export const Landing =()=>{
     
     const button = {
@@ -14,6 +14,7 @@ export const Landing =()=>{
         
       };
     return (
+        <>
         <div className={styles.landing}>
             <div>
                 <div className={styles.landing1}>
@@ -54,6 +55,9 @@ export const Landing =()=>{
                     </div>
                 </div>
             </div>
+         
         </div>
+           <Footer/>
+        </>
     )
 }

@@ -1,6 +1,6 @@
 import Gainers from "../components/Gainers"
 import Lossers from "../components/Losers"
-import Navigation from "../components/Navigation.jsx"
+import Navigation from "../components/navigation.jsx"
 import Screener from "../components/Screener"
 import styles from "../styles/home.module.css"
 import {AiOutlineStock,AiFillGold } from "react-icons/ai";
@@ -8,6 +8,7 @@ import { TbSpeakerphone } from "react-icons/tb";
 import {RiExchangeDollarLine} from "react-icons/ri";
 import { BsGraphUp} from "react-icons/bs";
 import Routercomponent from "../components/Routercomponent"
+import Footer from "../components/Footer"
 const Home = () => {
   return (
 <div>
@@ -76,6 +77,7 @@ const Home = () => {
        
    </div>
    </div>
+   <Footer/>
 </div>
   )
 }

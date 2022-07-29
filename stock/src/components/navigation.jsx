@@ -49,7 +49,11 @@ export default function Navigation(){
  <div className={styles.account}>
  <IoIosNotificationsOutline style={{marginTop:'3%',height:'50px',width:'30px',cursor:'pointer'}}/>
  <BiWalletAlt style={{marginTop:'3%',height:'50px',width:'30px',cursor:'pointer'}} />
-{info ? <img src={info.picture} alt="userImage" style={{height:'45px',width:'45px',borderRadius:'50%',marginTop:"4%"}} />:  <Button onClick={()=>{setShow(true)}}  styles={button}/>} 
+{info ? <img onClick={()=>{
+  localStorage.removeItem('userinfo');
+  navigate('/')
+window.location.reload()
+}} src={info.picture} alt="userImage" style={{height:'45px',width:'45px',borderRadius:'50%',marginTop:"4%",cursor:'pointer'}} />:  <Button onClick={()=>{setShow(true)}}  styles={button}/>} 
  </div>
  {show &&   <div className={styles.login}>
         
