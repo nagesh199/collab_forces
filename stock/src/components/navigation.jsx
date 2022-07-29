@@ -132,7 +132,7 @@ export default function navigation(){
                   width: 350,
                   maxWidth: "100%",
                   marginLeft:'10%',
-                  marginTop:'12%',
+                  marginTop:'12%', 
                 }}
               >
                 <TextField fullWidth label="Your Email Address"  />
