@@ -4,7 +4,7 @@ import { useEffect,useState } from 'react';
 import io from "socket.io-client";
 const Lossers = () => {
   const [count,setCount] = useState(0);
-  const socket = io.connect("http://localhost:8080");
+  const socket = io.connect("https://real-trade.herokuapp.com");
   const [loseData,setLoseData] = useState([]);
   
   useEffect(()=>{

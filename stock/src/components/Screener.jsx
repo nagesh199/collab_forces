@@ -3,7 +3,7 @@ import { useEffect,useState } from 'react';
 import io from "socket.io-client"
 import styles from '../styles/screener.module.css'
 const Screener = () => {
-  const socket = io.connect("http://localhost:8080");
+  const socket = io.connect("https://real-trade.herokuapp.com");
   const [stockData,setStockData] = useState([]);
   const [count,setCount] = useState(5);
   

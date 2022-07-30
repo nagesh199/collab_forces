@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import styles from '../styles/chart.module.css'
 
 export const Chart = ()=>{
-    const socket = io.connect("http://localhost:8080");
+    const socket = io.connect("https://real-trade.herokuapp.com");
    const [chartData,setChartData] = useState([])
     useEffect(()=>{
         socket.on("cpu",(cpuPercent)=>{

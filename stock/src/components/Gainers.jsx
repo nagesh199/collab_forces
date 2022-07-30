@@ -2,9 +2,10 @@ import React from 'react'
 import styles from '../styles/gainer.module.css'
 import { useEffect,useState } from 'react';
 import io from "socket.io-client";
+
 const Gainers = () => {
   const [count,setCount] = useState(5);
-  const socket = io.connect("http://localhost:8080");
+  const socket = io.connect("https://real-trade.herokuapp.com");
   const [data,setData] = useState([]);
   
   useEffect(()=>{
